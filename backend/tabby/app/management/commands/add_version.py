@@ -62,5 +62,5 @@ class Command(BaseCommand):
 
             if fs.exists(target):
                 fs.rm(target, recursive=True)
-            fs.mkdir(target)
+            # fs.mkdir(target)
             fs.put(str(tempdir), target, recursive=True)
